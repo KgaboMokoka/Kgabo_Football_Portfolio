@@ -1,13 +1,15 @@
-import Image from "next/image";
+import Navbar from "./components/navbar";
 
 export default function Home() {
   return (
     <div>
-      <section className="Hero"></section>
-      <section className="About"></section>
-      <section className="Skills"></section>
-      <section className="Projects"></section>
-      <section className="Contact"></section>
+      <section className="Hero">
+        <Navbar />
+      </section>
+      <section className="about"></section>
+      <section className="skills"></section>
+      <section className="projects"></section>
+      <section className="contact"></section>
 
       <section className="textSection hidden">
         <h1 className="font-bebas text-gold text-5xl">Heading Font</h1>
