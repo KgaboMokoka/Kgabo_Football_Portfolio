@@ -1,8 +1,6 @@
+import FUT from "./futCard";
 import Image from "next/image";
-import gitHub from "../assets/icons/github-brands-solid-full.svg";
-import linkedIn from "../assets/icons/linkedin-in-brands-solid-full.svg";
-import mail from "../assets/icons/envelope-regular-full.svg";
-
+import Arrow from "./arrow";
 function HeroInfo() {
   return (
     <>
@@ -62,8 +60,12 @@ function HeroInfo() {
             </a>
           </div>
         </div>
-        <div className="HeroArrow border w-20 h-20 m-16"></div>
-        <div className="HeroFUTCard border w-20 h-20 m-16"></div>
+        <div className="HeroArrow border w-20 h-20 m-16 align-bottom">
+          <Arrow />
+        </div>
+        <div className="HeroFUTCard m-16">
+          <FUT />
+        </div>
       </div>
     </>
   );
