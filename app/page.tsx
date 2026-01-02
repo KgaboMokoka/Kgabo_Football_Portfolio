@@ -8,7 +8,6 @@ export default function Home() {
       <section className="Hero">
         <Navbar />
         <Available />
-
         <HeroInfo />
       </section>
       <section className="about"></section>

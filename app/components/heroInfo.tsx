@@ -20,10 +20,10 @@ function HeroInfo() {
             </p>
           </div>
           <div className="CTABtns font-archivo my-7">
-            <button className="border border-light-green bg-light-green rounded-4xl w-auto mx-1 py-2 px-5">
+            <button className="border border-light-green bg-light-green rounded-4xl w-auto mx-1 py-2 px-5 hover:bg-dark-green">
               VIEW TROPHY CABINET
             </button>
-            <button className="border border-light-green rounded-4xl w-auto mx-1 py-2 px-11">
+            <button className="border border-light-green rounded-4xl w-auto mx-1 py-2 px-11 hover:bg-light-green">
               SIGN ME
             </button>
           </div>
@@ -60,7 +60,7 @@ function HeroInfo() {
             </a>
           </div>
         </div>
-        <div className="HeroArrow border w-20 h-20 m-16 align-bottom">
+        <div className="HeroArrow absolute left-1/2 bottom-8 -translate-x-1/2 ">
           <Arrow />
         </div>
         <div className="HeroFUTCard m-16">
