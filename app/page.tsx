@@ -1,10 +1,14 @@
 import Navbar from "./components/navbar";
+import Available from "./components/available";
+import HeroInfo from "./components/heroInfo";
 
 export default function Home() {
   return (
     <div>
       <section className="Hero">
         <Navbar />
+        <Available />
+        <HeroInfo />
       </section>
       <section className="about"></section>
       <section className="skills"></section>
