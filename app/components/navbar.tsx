@@ -6,13 +6,7 @@ import Link from "next/link";
 function Navbar() {
   return (
     <>
-      <nav className="my-16 flex items-center justify-between px10">
-        <div className="flex mx-16 items-center gap-2">
-          <Link href="/">
-            <Image src={logo} alt="Club Crest" width={50} height={50} />
-          </Link>
-          <span className="font-archivo-black">Mokoka FC</span>
-        </div>
+      <nav className="my-16 flex items-center px10 justify-end">
         <ul className="flex items-center gap-8 font-archivo text-text mx-16">
           <li className="relative group ">
             <Link
