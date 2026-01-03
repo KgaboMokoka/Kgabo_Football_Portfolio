@@ -7,7 +7,6 @@ function HeroInfo() {
         <div className="HeroInformation flex-col  w-100 h-auto m-16">
           <div className="softwareEngTxt flex-col w-70 h-auto font-bebas">
             <h1>
-              {/* there must be a new line between the Software Engineer text */}
               <span className="font-bebas text-text text-7xl">Software </span>
               <span className="font-bebas text-gold text-6xl">Engineer</span>
             </h1>
@@ -19,10 +18,10 @@ function HeroInfo() {
             </p>
           </div>
           <div className="CTABtns font-archivo my-7">
-            <button className="border border-light-green bg-light-green rounded-4xl w-auto mx-1 py-2 px-5 hover:bg-dark-green">
+            <button className="border border-light-green bg-light-green rounded-4xl w-auto mx-1 py-2 px-5 hover:bg-dark-green transition-colors duration-300 cursor-pointer">
               VIEW TROPHY CABINET
             </button>
-            <button className="border border-light-green rounded-4xl w-auto mx-1 py-2 px-11 hover:bg-light-green">
+            <button className="border border-light-green rounded-4xl w-auto mx-1 py-2 px-11 hover:bg-light-green transition-colors duration-300 cursor-pointer">
               SIGN ME
             </button>
           </div>

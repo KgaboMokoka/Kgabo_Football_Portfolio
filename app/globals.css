@@ -3,6 +3,7 @@
 :root {
   --background: #101A15;
   --textColour: #FAFAFA;
+  --fadedText: #738B79; 
   --gold: #E0A419; 
   --darkGreen: #102A1C; 
   --lightGreen: #27BA5D;
@@ -17,6 +18,7 @@
   --color-dark-green: var(--darkGreen); 
   --color-light-green: var(--lightGreen); 
   --color-text: var(--textColour);
+  --color-faded: var(--fadedText); 
   --color-bg-main: var(--background);
 }
 
