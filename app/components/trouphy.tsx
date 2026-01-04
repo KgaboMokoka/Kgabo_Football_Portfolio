@@ -1,4 +1,5 @@
-import FeturedBadge from "./twoSpanTrophy";
+import FeturedBadge from "./favoriteProject";
+import ProjectBadges from "./otherProjects";
 
 function Trouphy() {
   return (
@@ -21,11 +22,19 @@ function Trouphy() {
         <div className="col-span-2 bg-dark-green rounded-2xl ml-16">
           <FeturedBadge />
         </div>
-        <div className="bg-dark-green rounded-2xl ml-16">Block 2</div>
+        <div className="bg-dark-green rounded-2xl ml-16">
+          <ProjectBadges />
+        </div>
         {/* Row two */}
-        <div className="bg-green-500">Block 3</div>
-        <div className="bg-orange-500">Block 4</div>
-        <div className="bg-purple-500">Block 5</div>
+        <div className="bg-dark-green rounded-2xl ml-16 mt-4">
+          <ProjectBadges />
+        </div>
+        <div className="bg-dark-green rounded-2xl ml-16 mt-4">
+          <ProjectBadges />
+        </div>
+        <div className="bg-dark-green rounded-2xl ml-16 mt-4">
+          <ProjectBadges />
+        </div>
       </div>
     </>
   );
