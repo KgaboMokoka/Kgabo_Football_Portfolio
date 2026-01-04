@@ -23,6 +23,23 @@ function FUT() {
               HTML & CSS
             </p>
             <span className="font-archivo-black text-light-green text-sm">
+              95%
+            </span>
+          </div>
+          <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
+              style={{ width: "95%" }}
+            ></div>
+          </div>
+        </div>
+        {/* Skill Two */}
+        <div className="skillPoint flex flex-col gap-1">
+          <div className="flex justify-between items-end">
+            <p className="text-text/60 text-xs tracking-widest uppercase">
+              Tailwind
+            </p>
+            <span className="font-archivo-black text-light-green text-sm">
               90%
             </span>
           </div>
@@ -30,24 +47,6 @@ function FUT() {
             <div
               className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
               style={{ width: "90%" }}
-            ></div>
-          </div>
-        </div>
-
-        {/* Skill Two */}
-        <div className="skillPoint flex flex-col gap-1">
-          <div className="flex justify-between items-end">
-            <p className="text-text/60 text-xs tracking-widest uppercase">
-              React
-            </p>
-            <span className="font-archivo-black text-light-green text-sm">
-              75%
-            </span>
-          </div>
-          <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-light-green shadow-[0_0_10px_#27BA5D]"
-              style={{ width: "75%" }}
             ></div>
           </div>
         </div>
@@ -64,7 +63,24 @@ function FUT() {
           <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
             <div
               className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
-              style={{ width: "90%" }}
+              style={{ width: "80%" }}
+            ></div>
+          </div>
+        </div>
+        {/* Skill Four */}
+        <div className="skillPoint flex flex-col gap-1">
+          <div className="flex justify-between items-end">
+            <p className="text-text/60 text-xs tracking-widest uppercase">
+              React
+            </p>
+            <span className="font-archivo-black text-light-green text-sm">
+              80%
+            </span>
+          </div>
+          <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-light-green shadow-[0_0_10px_#27BA5D]"
+              style={{ width: "80%" }}
             ></div>
           </div>
         </div>

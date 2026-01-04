@@ -60,7 +60,7 @@ function About() {
           </div>
           <div className="aboutRight grid grid-cols-2 grid-rows-2 gap-8 p-5 ">
             {/* badge one */}
-            <div className="bg-dark-green flex flex-col items-center justify-center w-75 h-60 p-5 rounded-xl font-archivo-black">
+            <div className="bg-dark-green flex flex-col items-center justify-center w-75 h-60 p-5 rounded-xl font-archivo-black  hover:shadow-sm transition-transform duration-300 transform hover:scale-110">
               <div className="bg-light-green rounded-xl p-3 mb-3">
                 <svg
                   className="w-6 h-6 text-dark-green"
@@ -77,7 +77,7 @@ function About() {
               </p>
             </div>
             {/* badge two */}
-            <div className="bg-dark-green flex flex-col items-center justify-center w-75 h-60 p-5 rounded-xl font-archivo-black">
+            <div className="bg-dark-green flex flex-col items-center justify-center w-75 h-60 p-5 rounded-xl font-archivo-black hover:shadow-sm transition-transform duration-300 transform hover:scale-110">
               <div className="bg-light-green rounded-2xl p-3 mb-3">
                 <svg
                   className="w-6 h-6 text-dark-green"
@@ -94,7 +94,7 @@ function About() {
               </p>
             </div>
             {/* badge three */}
-            <div className="bg-dark-green flex flex-col items-center justify-center w-75 h-60 p-5 rounded-xl font-archivo-black">
+            <div className="bg-dark-green flex flex-col items-center justify-center w-75 h-60 p-5 rounded-xl font-archivo-black hover:shadow-sm transition-transform duration-300 transform hover:scale-110">
               <div className="bg-light-green rounded-2xl p-3 mb-3">
                 <svg
                   className="w-6 h-6 text-dark-green"
@@ -111,7 +111,7 @@ function About() {
               </p>
             </div>
             {/* badge four*/}
-            <div className="bg-dark-green flex flex-col items-center justify-center w-75 h-60 p-5 rounded-xl font-archivo-black">
+            <div className="bg-dark-green flex flex-col items-center justify-center w-75 h-60 p-5 rounded-xl font-archivo-black hover:shadow-sm transition-transform duration-300 transform hover:scale-110">
               <div className="bg-light-green rounded-2xl p-3 mb-3">
                 <svg
                   className="w-6 h-6 text-dark-green"
