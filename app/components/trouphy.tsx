@@ -17,7 +17,7 @@ function Trouphy() {
           technical skills, and champions mentality
         </p>
       </div>
-      <div className="container flex grid grid-rows-2 grid-cols-3 gap-16">
+      <div className="container grid grid-rows-2 grid-cols-3 gap-16">
         {/* Row One */}
         <div className="col-span-2 bg-dark-green rounded-2xl ml-16">
           <FeaturedProject />
