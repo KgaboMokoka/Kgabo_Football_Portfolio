@@ -1,4 +1,4 @@
-function ProjectBadges() {
+function OtherProjects() {
   return (
     <>
       <div className="flex justify-center items-center mt-16">
@@ -73,4 +73,4 @@ function ProjectBadges() {
   );
 }
 
-export default ProjectBadges;
+export default OtherProjects;

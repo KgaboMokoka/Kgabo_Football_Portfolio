@@ -1,5 +1,5 @@
-import FeturedBadge from "./favoriteProject";
-import ProjectBadges from "./otherProjects";
+import FeaturedProject from "./favoriteProject";
+import OtherProjects from "./otherProjects";
 
 function Trouphy() {
   return (
@@ -17,23 +17,23 @@ function Trouphy() {
           technical skills, and champions mentality
         </p>
       </div>
-      <div className="container flex grid grid-rows-2 grid-cols-3">
+      <div className="container flex grid grid-rows-2 grid-cols-3 gap-16">
         {/* Row One */}
         <div className="col-span-2 bg-dark-green rounded-2xl ml-16">
-          <FeturedBadge />
+          <FeaturedProject />
         </div>
-        <div className="bg-dark-green rounded-2xl ml-16">
-          <ProjectBadges />
+        <div className="bg-dark-green rounded-2xl mr-16">
+          <OtherProjects />
         </div>
         {/* Row two */}
-        <div className="bg-dark-green rounded-2xl ml-16 mt-4">
-          <ProjectBadges />
+        <div className="bg-dark-green rounded-2xl ml-16 mr-16 mt-4">
+          <OtherProjects />
         </div>
-        <div className="bg-dark-green rounded-2xl ml-16 mt-4">
-          <ProjectBadges />
+        <div className="bg-dark-green rounded-2xl mr-16 mt-4">
+          <OtherProjects />
         </div>
-        <div className="bg-dark-green rounded-2xl ml-16 mt-4">
-          <ProjectBadges />
+        <div className="bg-dark-green rounded-2xl mr-16 mt-4">
+          <OtherProjects />
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
 function About() {
   return (
     <>
-      <div className="container  flex flex-col">
+      <div className="container mx-auto flex flex-col max-w-7xl px-4">
         <div className="aboutHeading flex flex-col justify-center items-center">
           <p className="text-light-green font-archivo-black text-sm py-2">
             SCOUTING REPORT
@@ -11,23 +11,23 @@ function About() {
             <span className="text-gold">ME</span>
           </h1>
         </div>
-        <div className="aboutInformationContainer flex justify-between mx-16">
-          <div className="aboutLeft flex-col">
-            <div className="abouttext w-158 font-archivo mb-16">
+        <div className="aboutInformationContainer flex justify-center items-center gap-8 px-8">
+          <div className="aboutLeft flex-col max-w-2xl">
+            <div className="abouttext font-archivo mb-16">
               <p>
                 Like a seasoned football player reading the game, I analyses
                 complex problems and deliver elegant solutions. With a couple
-                months experience in the development league, I've honed my
+                months experience in the development league, I&apos;ve honed my
                 skills across the full stack. My playing style? Clean,
                 maintainable code that stands the test of time. I believe in
                 building applications that not only work but inspire, just like
                 a perfectly executed play that brings fans to their feet.
-                Whether it's architecting complex systems or crafting
+                Whether it&apos;s architecting complex systems or crafting
                 pixel-perfect interfaces, i bring the same passion and
                 dedication that makes champions.
               </p>
             </div>
-            {/* Bagdes */}
+            {/* Badges */}
             <div className="flex items-center justify-center">
               {/* Badge 1 */}
               <div className="aboutBadges mr-5 flex">
@@ -58,9 +58,9 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="aboutRight grid grid-cols-2 grid-rows-2 gap-8 p-5 ">
+          <div className="aboutRight grid grid-cols-2 grid-rows-2 gap-8 p-5">
             {/* badge one */}
-            <div className="bg-dark-green flex flex-col items-center justify-center w-75 h-60 p-5 rounded-xl font-archivo-black  hover:shadow-sm transition-transform duration-300 transform hover:scale-110">
+            <div className="bg-dark-green flex flex-col items-center justify-center w-full h-full p-5 rounded-xl font-archivo-black">
               <div className="bg-light-green rounded-xl p-3 mb-3">
                 <svg
                   className="w-6 h-6 text-dark-green"
@@ -77,7 +77,7 @@ function About() {
               </p>
             </div>
             {/* badge two */}
-            <div className="bg-dark-green flex flex-col items-center justify-center w-75 h-60 p-5 rounded-xl font-archivo-black hover:shadow-sm transition-transform duration-300 transform hover:scale-110">
+            <div className="bg-dark-green flex flex-col items-center justify-center w-full h-full p-5 rounded-xl font-archivo-black">
               <div className="bg-light-green rounded-2xl p-3 mb-3">
                 <svg
                   className="w-6 h-6 text-dark-green"
@@ -94,7 +94,7 @@ function About() {
               </p>
             </div>
             {/* badge three */}
-            <div className="bg-dark-green flex flex-col items-center justify-center w-75 h-60 p-5 rounded-xl font-archivo-black hover:shadow-sm transition-transform duration-300 transform hover:scale-110">
+            <div className="bg-dark-green flex flex-col items-center justify-center w-full h-full p-5 rounded-xl font-archivo-black">
               <div className="bg-light-green rounded-2xl p-3 mb-3">
                 <svg
                   className="w-6 h-6 text-dark-green"
@@ -111,7 +111,7 @@ function About() {
               </p>
             </div>
             {/* badge four*/}
-            <div className="bg-dark-green flex flex-col items-center justify-center w-75 h-60 p-5 rounded-xl font-archivo-black hover:shadow-sm transition-transform duration-300 transform hover:scale-110">
+            <div className="bg-dark-green flex flex-col items-center justify-center w-full h-full p-5 rounded-xl font-archivo-black">
               <div className="bg-light-green rounded-2xl p-3 mb-3">
                 <svg
                   className="w-6 h-6 text-dark-green"
