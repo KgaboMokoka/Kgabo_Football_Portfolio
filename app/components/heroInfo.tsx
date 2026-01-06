@@ -3,7 +3,7 @@ import Arrow from "./arrow";
 function HeroInfo() {
   return (
     <>
-      <div className="HeroContainer flex w-auto h-auto  justify-between my-4">
+      <div className="HeroContainer flex w-auto h-auto  justify-between ">
         <div className="HeroInformation flex-col  w-100 h-auto m-16">
           <div className="softwareEngTxt flex-col w-70 h-auto font-bebas">
             <h1>
