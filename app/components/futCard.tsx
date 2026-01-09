@@ -16,7 +16,7 @@ function FUT() {
 
       <div className="skillPointsSection font-archivo p-4 space-y-4">
         {/* actual section for the skills */}
-        {/* Skill One */}
+        {/* Skill 1 */}
         <div className="skillPoint flex flex-col gap-1">
           <div className="flex justify-between items-end">
             <p className="text-text/60 text-xs tracking-widest uppercase">
@@ -33,24 +33,7 @@ function FUT() {
             ></div>
           </div>
         </div>
-        {/* Skill Two */}
-        <div className="skillPoint flex flex-col gap-1">
-          <div className="flex justify-between items-end">
-            <p className="text-text/60 text-xs tracking-widest uppercase">
-              Tailwind
-            </p>
-            <span className="font-archivo-black text-light-green text-sm">
-              90%
-            </span>
-          </div>
-          <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
-              style={{ width: "90%" }}
-            ></div>
-          </div>
-        </div>
-        {/* Skill Three */}
+        {/* Skill 2 */}
         <div className="skillPoint flex flex-col gap-1">
           <div className="flex justify-between items-end">
             <p className="text-text/60 text-xs tracking-widest uppercase">
@@ -67,7 +50,7 @@ function FUT() {
             ></div>
           </div>
         </div>
-        {/* Skill Four */}
+        {/* Skill 3 */}
         <div className="skillPoint flex flex-col gap-1">
           <div className="flex justify-between items-end">
             <p className="text-text/60 text-xs tracking-widest uppercase">
@@ -81,6 +64,23 @@ function FUT() {
             <div
               className="h-full bg-light-green shadow-[0_0_10px_#27BA5D]"
               style={{ width: "80%" }}
+            ></div>
+          </div>
+        </div>
+        {/* Skill 4 */}
+        <div className="skillPoint flex flex-col gap-1">
+          <div className="flex justify-between items-end">
+            <p className="text-text/60 text-xs tracking-widest uppercase">
+              JavaScript
+            </p>
+            <span className="font-archivo-black text-light-green text-sm">
+              60%
+            </span>
+          </div>
+          <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
+              style={{ width: "60%" }}
             ></div>
           </div>
         </div>

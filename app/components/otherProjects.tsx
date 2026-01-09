@@ -52,9 +52,9 @@ function OtherProjects() {
         </a>
         {/* New Tab */}
         <a href="" target="_blank" rel="noopener noreferrer">
-          <button className="flex justify-center items-center gap-2 border border-light-green rounded-xl bg-dark-green text-light-green p-2 transition-all hover:bg-light-green/10">
+          <button className="flex justify-center items-center gap-2 border border-light-green rounded-xl bg-light-green text-text p-2 transition-all hover:bg-light-green/10">
             <svg
-              fill="#27BA5D"
+              fill="#FAFAFA"
               width="1.5rem"
               height="1.5rem"
               viewBox="0 0 48 48"
