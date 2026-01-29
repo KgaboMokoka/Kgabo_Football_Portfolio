@@ -23,20 +23,45 @@ function Trouphy() {
           <FeaturedProject />
         </div>
         <div className="bg-dark-green rounded-2xl mr-16">
-          <OtherProjects />
+          <OtherProjects
+            title="Project Title"
+            description="Project description goes here"
+            techStack={["React", "TypeScript", "Tailwind"]}
+            live="https://example.com"
+            github="https://github.com/username/repo"
+          />
         </div>
         {/* Row two */}
         <div className="bg-dark-green rounded-2xl ml-16 mr-16 mt-4">
-          <OtherProjects />
+          <OtherProjects
+            title="Somnium Records"
+            description="A quick landing page / Promo page for a record label to be able to send out marketing information to listners and any other news the label wants to send out"
+            techStack={["HTML", "Tailwind", "Vercel", "Brevo"]}
+            live="https://somnium-two.vercel.app/"
+            github="https://github.com/KgaboMokoka/Somnium_Records_landing_page"
+          />
         </div>
         <div className="bg-dark-green rounded-2xl mr-16 mt-4">
-          <OtherProjects />
+          <OtherProjects
+            title="Another Project"
+            description="Description of another project"
+            techStack={["Next.js", "CSS"]}
+            live="https://example.com"
+            github="https://github.com/username/repo"
+          />
         </div>
         <div className="bg-dark-green rounded-2xl mr-16 mt-4">
-          <OtherProjects />
+          <OtherProjects
+            title="Third Project"
+            description="Description of third project"
+            techStack={["JavaScript", "Node.js"]}
+            live="https://example.com"
+            github="https://github.com/username/repo"
+          />
         </div>
       </div>
     </>
   );
 }
+
 export default Trouphy;
