@@ -1,7 +1,7 @@
 import FeaturedProject from "./favoriteProject";
 import OtherProjects from "./otherProjects";
 
-function Trouphy() {
+function Trophy() {
   return (
     <>
       <div className="aboutHeading flex flex-col justify-center items-center">
@@ -32,6 +32,7 @@ function Trouphy() {
           />
         </div>
         {/* Row two */}
+        {/* card 1 */}
         <div className="bg-dark-green rounded-2xl ml-16 mr-16 mt-4">
           <OtherProjects
             title="Somnium Records"
@@ -41,6 +42,7 @@ function Trouphy() {
             github="https://github.com/KgaboMokoka/Somnium_Records_landing_page"
           />
         </div>
+        {/* card 2 */}
         <div className="bg-dark-green rounded-2xl mr-16 mt-4">
           <OtherProjects
             title="Another Project"
@@ -50,6 +52,7 @@ function Trouphy() {
             github="https://github.com/username/repo"
           />
         </div>
+        {/* card 3 */}
         <div className="bg-dark-green rounded-2xl mr-16 mt-4">
           <OtherProjects
             title="Third Project"
@@ -64,4 +67,4 @@ function Trouphy() {
   );
 }
 
-export default Trouphy;
+export default Trophy;

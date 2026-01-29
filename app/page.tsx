@@ -2,7 +2,7 @@ import Navbar from "./components/navbar";
 import Available from "./components/available";
 import HeroInfo from "./components/heroInfo";
 import About from "./components/about";
-import Trouphy from "./components/trouphy";
+import Trophy from "./components/trophy";
 import Test from "./components/testFile";
 import Contact from "./components/contact";
 import TechnicalSkill from "./components/technicalSkills";
@@ -30,7 +30,7 @@ export default function Home() {
         <TechnicalSkill />
       </section>
       <section className="#projects my-4">
-        <Trouphy />
+        <Trophy />
       </section>
       <section className="#contact my-4">
         <Contact />
