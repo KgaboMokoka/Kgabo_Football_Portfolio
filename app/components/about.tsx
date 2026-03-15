@@ -12,21 +12,8 @@ function About() {
           </h1>
         </div>
         <div className="aboutInformationContainer flex justify-center items-center gap-8 px-8">
-          <div className="aboutLeft flex-col max-w-2xl">
+          <div className="aboutLeft flex flex-col max-w-2xl">
             <div className="abouttext font-archivo mb-16">
-              <p className="hidden">
-                Like a seasoned football player reading the game, I analyses
-                complex problems and deliver elegant solutions. With a couple
-                months experience in the development league, I&apos;ve honed my
-                skills across the frontend. My playing style? Clean,
-                maintainable code that stands the test of time. I believe in
-                building applications that not only work but inspire, just like
-                a perfectly executed play that brings fans to their feet.
-                Whether it&apos;s architecting complex systems or crafting
-                pixel-perfect interfaces, i bring the same passion and
-                dedication that makes champions.
-              </p>
-
               <p>
                 I am Kgabo Mokoka, a{" "}
                 <span className="font-extrabold">frontend developer</span> based
@@ -47,7 +34,7 @@ function About() {
             <div className="flex items-center justify-center">
               {/* Badge 1 */}
               <div className="aboutBadges mr-5 flex">
-                <div className="badges bg-dark-green rounded-2xl w-50 h-25 p-5 flex flex-col items-center justify-center">
+                <div className="badges bg-dark-green rounded-2xl w-48 h-24 p-5 flex flex-col items-center justify-center">
                   <div className="font-archivo-black text-5xl text-light-green">
                     1+
                   </div>
@@ -56,7 +43,7 @@ function About() {
               </div>
               {/* Badge 2 */}
               <div className="aboutBadges mr-5">
-                <div className="badges bg-dark-green rounded-2xl w-50 h-25 p-5 flex flex-col items-center justify-center">
+                <div className="badges bg-dark-green rounded-2xl w-48 h-24 p-5 flex flex-col items-center justify-center">
                   <div className="font-archivo-black text-5xl text-light-green">
                     5+
                   </div>
@@ -65,7 +52,7 @@ function About() {
               </div>
               {/* Badge 3 */}
               <div className="aboutBadges">
-                <div className="badges bg-dark-green rounded-2xl w-50 h-25 p-5 flex flex-col items-center justify-center">
+                <div className="badges bg-dark-green rounded-2xl w-48 h-24 p-5 flex flex-col items-center justify-center">
                   <div className="font-archivo-black text-5xl text-light-green">
                     100%
                   </div>

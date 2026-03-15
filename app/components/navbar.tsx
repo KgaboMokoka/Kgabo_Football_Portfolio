@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import logo from "../assets/logo.png";
 import Link from "next/link";
 
 function Navbar() {
   return (
     <>
-      <nav className="my-16 flex items-center px10 justify-end">
+      <nav className="my-16 flex items-center px-10 justify-end">
         <ul className="flex items-center gap-8 font-archivo text-text mx-16">
           <li className="relative group ">
             <Link

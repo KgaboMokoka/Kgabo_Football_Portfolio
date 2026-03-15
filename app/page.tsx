@@ -23,16 +23,20 @@ export default function Home() {
         <Available />
         <HeroInfo />
       </section>
-      <section className="#about my-4">
+
+      <section id="about" className="my-4">
         <About />
       </section>
-      <section className="#skills my-4">
+
+      <section id="skills" className="my-4">
         <TechnicalSkill />
       </section>
-      <section className="#projects my-4">
+
+      <section id="projects" className="my-4">
         <Trophy />
       </section>
-      <section className="#contact my-4">
+
+      <section id="contact" className="my-4">
         <Contact />
       </section>
 

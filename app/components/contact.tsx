@@ -43,7 +43,7 @@ function Contact() {
         <div className="contactSection">
           <div className="grid grid-cols-2 gap-6">
             {/* Col 1 */}
-            <div className="leftGrid grid grid-rows-4 ">
+            <div className="leftGrid grid grid-rows-4 gap-4">
               {/* Email Badge */}
               <div className="emailBadge flex gap-2 h-15">
                 <div className="bg-dark-green rounded-xl p-4">
@@ -125,7 +125,11 @@ function Contact() {
               </div>
             </div>
             {/* Col 2 */}
-            <form className="contactForm w-full m-x-md space-y-4 rounded bg-dark-green p-6">
+            <form
+              className="contactForm w-full m-x-md space-y-4 rounded bg-dark-green p-6"
+              // onSubmit={(e) => e.preventDefault()}
+              // HERE  IS THE EMAIL SECTION YOU NEED TO FIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            >
               {/* Name */}
               <div>
                 <label
@@ -149,7 +153,7 @@ function Contact() {
                   EMAIL
                 </label>
                 <input
-                  type="emil"
+                  type="email"
                   placeholder="your@email.com"
                   className="w-full resize-none rounded-md bg-light-green px-4 py-2 text-white placeholder-dark-green focus:outline-none focus:ring-2 focus:ring-green-500"
                 />

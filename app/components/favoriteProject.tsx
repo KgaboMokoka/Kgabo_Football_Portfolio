@@ -5,7 +5,7 @@
 
 // This is for the header of the FeaturedProject
 
-function FeturedBadge() {
+function featuredBadge() {
   return (
     <>
       <div className="container p-8 flex-col flex-wrap">
@@ -102,4 +102,4 @@ function FeturedBadge() {
   );
 }
 
-export default FeturedBadge;
+export default featuredBadge;
