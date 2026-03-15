@@ -46,22 +46,23 @@ function featuredBadge() {
           </div>
         </div>
         <div className="content mb-4">
-          <h1 className="font-bebas text-3xl">E-COMMERCE PLATFORM</h1>
+          <h1 className="font-bebas text-3xl">Campus Market</h1>
           <p className="font-archivo text-faded">
-            A full-stack e-commerce solution with real-time inventory, payment
-            processing, and analytics dashboard.
+            The marketplace designed for your university. List textbooks, res
+            essentials, electronics - and find great deals from fellow students.
           </p>
         </div>
-        <div className="teckStack flex flex-wrap gap-2 mb-6">
+        <div className="techStack flex flex-wrap gap-2 mb-6">
           <div className="bg-faded p-2 rounded-xl">Next.js</div>
           <div className="bg-faded p-2 rounded-xl">TypeScript</div>
-          <div className="bg-faded p-2 rounded-xl">Strip</div>
+          <div className="bg-faded p-2 rounded-xl">Supabase</div>
           <div className="bg-faded p-2 rounded-xl">PostgreSQL</div>
+          <div className="bg-faded p-2 rounded-xl">Vercel</div>
         </div>
         <div className="liveBtn flex mb-4 gap-2">
           {/* GitHub */}
           <a
-            href="https://github.com/your-repo"
+            href="https://github.com/KgaboMokoka/campus_market"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -79,7 +80,11 @@ function featuredBadge() {
             </button>
           </a>
           {/* New Tab */}
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://campusmarket-nine.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="flex justify-center items-center gap-2 border border-light-green rounded-xl bg-light-green text-text p-2 transition-all hover:bg-light-green/10">
               <svg
                 fill="#FAFAFA"

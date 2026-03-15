@@ -6,10 +6,12 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-bg-main py-5 flex items-center justify-between px-6 md:px-10 lg:px-16">
+    <nav className="py-5 flex items-center justify-between px-6 md:px-10 lg:px-16">
       {/* Name/Logo - left side */}
       <div className="font-bebas text-2xl text-light-green tracking-widest">
-        KM<span className="text-gold">.</span>
+        <Link href="/">
+          KM<span className="text-gold">.</span>
+        </Link>
       </div>
 
       {/* Desktop Links */}
