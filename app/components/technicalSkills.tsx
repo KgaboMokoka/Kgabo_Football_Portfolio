@@ -1,43 +1,24 @@
-{
-  /* <div className="skillPoint flex flex-col gap-1">
-          <div className="flex justify-between items-end">
-            <p className="text-text/60 text-xs tracking-widest uppercase">
-              HTML & CSS
-            </p>
-            <span className="font-archivo-black text-light-green text-sm">
-              95%
-            </span>
-          </div>
-          <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
-              style={{ width: "95%" }}
-            ></div>
-          </div>
-        </div> */
-}
-
 function TechnicalSkill() {
   return (
     <>
-      <div>
+      <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
         <div className="skillHeading flex flex-col justify-center items-center">
           <p className="text-light-green font-archivo-black text-sm py-2">
             PLAYER ATTRIBUTES
           </p>
-          <h1 className="font-bebas text-7xl">
+          <h1 className="font-bebas text-5xl md:text-6xl lg:text-7xl">
             <span className="text-text">TECHNICAL </span>
             <span className="text-gold">SKILLS</span>
           </h1>
-          <p className="text-faded font-archivo py-2 mb-10">
-            Like a versitile defender, I bring a complete package of technical
+          <p className="text-faded font-archivo text-center py-2 mb-10">
+            Like a versatile defender, I bring a complete package of technical
             abilities to every match.
           </p>
         </div>
-        <div className="skillsGrid grid grid-cols-2 gap-10 m-16">
+        <div className="skillsGrid grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Frontend */}
           <div className="frontend bg-dark-green p-6 rounded-md border border-light-green">
-            <div className="headings flex gap-6 items-center">
+            <div className="headings flex gap-4 items-center mb-4">
               <div className="rounded-xl bg-dark-green border border-light-green p-2">
                 <svg
                   width="1.5rem"
@@ -54,102 +35,44 @@ function TechnicalSkill() {
               </div>
               <h3 className="font-archivo-black">FRONTEND</h3>
             </div>
-            {/* Progress Bar 1*/}
-            <div className="skillPoint flex flex-col gap-1">
-              <div className="flex justify-between items-end">
-                <p className="text-text text-xs tracking-widest uppercase font-archivo-black">
-                  HTML&CSS
-                </p>
-                <span className="font-archivo-black text-light-green text-sm">
-                  98%
-                </span>
+            {[
+              { label: "HTML & CSS", value: "98%" },
+              { label: "JavaScript", value: "60%" },
+              { label: "React", value: "70%" },
+              { label: "Tailwind CSS", value: "84%" },
+              { label: "Git & GitHub", value: "80%" },
+            ].map((skill) => (
+              <div
+                key={skill.label}
+                className="skillPoint flex flex-col gap-1 mb-3"
+              >
+                <div className="flex justify-between items-end">
+                  <p className="text-text text-xs tracking-widest uppercase font-archivo-black">
+                    {skill.label}
+                  </p>
+                  <span className="font-archivo-black text-light-green text-sm">
+                    {skill.value}
+                  </span>
+                </div>
+                <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
+                    style={{ width: skill.value }}
+                  ></div>
+                </div>
               </div>
-              <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
-                  style={{ width: "98%" }}
-                ></div>
-              </div>
-            </div>
-            {/* Progress Bar 2*/}
-            <div className="skillPoint flex flex-col gap-1">
-              <div className="flex justify-between items-end">
-                <p className="text-text text-xs tracking-widest uppercase font-archivo-black">
-                  JavaScript
-                </p>
-                <span className="font-archivo-black text-light-green text-sm">
-                  60%
-                </span>
-              </div>
-              <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
-                  style={{ width: "60%" }}
-                ></div>
-              </div>
-            </div>
-            {/* Progress Bar 3*/}
-            <div className="skillPoint flex flex-col gap-1">
-              <div className="flex justify-between items-end">
-                <p className="text-text text-xs tracking-widest uppercase font-archivo-black">
-                  REACT
-                </p>
-                <span className="font-archivo-black text-light-green text-sm">
-                  70%
-                </span>
-              </div>
-              <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
-                  style={{ width: "70%" }}
-                ></div>
-              </div>
-            </div>
-            {/* Progress Bar 4*/}
-            <div className="skillPoint flex flex-col gap-1">
-              <div className="flex justify-between items-end">
-                <p className="text-text text-xs tracking-widest uppercase font-archivo-black">
-                  TAILWIND CSS
-                </p>
-                <span className="font-archivo-black text-light-green text-sm">
-                  84%
-                </span>
-              </div>
-              <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
-                  style={{ width: "84%" }}
-                ></div>
-              </div>
-            </div>
-            {/* Progress Bar 5*/}
-            <div className="skillPoint flex flex-col gap-1">
-              <div className="flex justify-between items-end">
-                <p className="text-text text-xs tracking-widest uppercase font-archivo-black">
-                  GIT & GITHUB
-                </p>
-                <span className="font-archivo-black text-light-green text-sm">
-                  80%
-                </span>
-              </div>
-              <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
-                  style={{ width: "80%" }}
-                ></div>
-              </div>
-            </div>
+            ))}
           </div>
+
           {/* Backend */}
-          <div className="frontend bg-dark-green p-6 rounded-md border border-light-green">
-            <div className="headings flex gap-6 items-center">
+          <div className="backend bg-dark-green p-6 rounded-md border border-light-green">
+            <div className="headings flex gap-4 items-center mb-4">
               <div className="rounded-xl bg-dark-green border border-light-green p-2">
                 <svg
                   width="1.5rem"
                   height="1.5rem"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
-                  data-name="Layer 1"
                 >
                   <path
                     fill="#27BA5D"
@@ -159,74 +82,32 @@ function TechnicalSkill() {
               </div>
               <h3 className="font-archivo-black">BACKEND</h3>
             </div>
-            {/* Progress Bar 1*/}
-            <div className="skillPoint flex flex-col gap-1">
-              <div className="flex justify-between items-end">
-                <p className="text-text text-xs tracking-widest uppercase font-archivo-black">
-                  PYTHON
-                </p>
-                <span className="font-archivo-black text-light-green text-sm">
-                  80%
-                </span>
+            {[
+              { label: "Python", value: "80%" },
+              { label: "REST APIs", value: "55%" },
+              { label: "SQLite", value: "88%" },
+              { label: "Relational DB Fundamentals", value: "78%" },
+            ].map((skill) => (
+              <div
+                key={skill.label}
+                className="skillPoint flex flex-col gap-1 mb-3"
+              >
+                <div className="flex justify-between items-end">
+                  <p className="text-text text-xs tracking-widest uppercase font-archivo-black">
+                    {skill.label}
+                  </p>
+                  <span className="font-archivo-black text-light-green text-sm">
+                    {skill.value}
+                  </span>
+                </div>
+                <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
+                    style={{ width: skill.value }}
+                  ></div>
+                </div>
               </div>
-              <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
-                  style={{ width: "80%" }}
-                ></div>
-              </div>
-            </div>
-            {/* Progress Bar 2*/}
-            <div className="skillPoint flex flex-col gap-1">
-              <div className="flex justify-between items-end">
-                <p className="text-text text-xs tracking-widest uppercase font-archivo-black">
-                  REST API&apos;s
-                </p>
-                <span className="font-archivo-black text-light-green text-sm">
-                  55%
-                </span>
-              </div>
-              <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
-                  style={{ width: "55%" }}
-                ></div>
-              </div>
-            </div>
-            {/* Progress Bar 3*/}
-            <div className="skillPoint flex flex-col gap-1">
-              <div className="flex justify-between items-end">
-                <p className="text-text text-xs tracking-widest uppercase font-archivo-black">
-                  SQLITE
-                </p>
-                <span className="font-archivo-black text-light-green text-sm">
-                  88%
-                </span>
-              </div>
-              <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
-                  style={{ width: "88%" }}
-                ></div>
-              </div>
-            </div>
-            {/* Progress Bar 4*/}
-            <div className="skillPoint flex flex-col gap-1">
-              <div className="flex justify-between items-end">
-                <p className="text-text text-xs tracking-widest uppercase font-archivo-black">
-                  Relational Database Fundamentals
-                </p>
-                <span className="font-archivo-black text-light-green text-sm">
-                  78%
-                </span>
-              </div>
-              <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-light-green shadow-[0_0_10px_#27BA5D] transition-all duration-1000"
-                  style={{ width: "78%" }}
-                ></div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

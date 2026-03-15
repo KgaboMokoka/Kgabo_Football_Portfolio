@@ -1,6 +1,6 @@
 function FUT() {
   return (
-    <div className="container border border-light-green/30 bg-bg-main rounded-2xl w-84 h-auto overflow-hidden shadow-2xl shadow-light-green">
+    <div className="container border border-light-green/30 bg-bg-main rounded-2xl w-84 max-w-full h-auto overflow-hidden shadow-2xl shadow-light-green">
       <div className="positionInfo relative flex flex-col font-bebas bg-light-green h-40 p-3 overflow-hidden">
         <div className="z-10 self-start border-2 border-light-green bg-dark-green rounded-xl px-4 py-1 text-2xl text-light-green">
           DEFENDER

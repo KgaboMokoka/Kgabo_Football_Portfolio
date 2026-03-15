@@ -1,51 +1,67 @@
-import React from "react";
-import Image from "next/image";
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <>
-      <nav className="my-16 flex items-center px-10 justify-end">
-        <ul className="flex items-center gap-8 font-archivo text-text mx-16">
-          <li className="relative group ">
+    <nav className="sticky top-0 z-50 bg-bg-main py-5 flex items-center justify-between px-6 md:px-10 lg:px-16">
+      {/* Name/Logo - left side */}
+      <div className="font-bebas text-2xl text-light-green tracking-widest">
+        KM<span className="text-gold">.</span>
+      </div>
+
+      {/* Desktop Links */}
+      <ul className="hidden md:flex items-center gap-8 font-archivo text-text">
+        {["about", "skills", "projects", "contact"].map((item) => (
+          <li key={item} className="relative group">
             <Link
-              href="#about"
-              className="hover:text-light-green transition-colors duration-300"
+              href={`#${item}`}
+              className="hover:text-light-green transition-colors duration-300 capitalize"
             >
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-light-green transition-all duration-300 group-hover:w-full"></span>
-              About
+              {item}
             </Link>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-light-green transition-all duration-300 group-hover:w-full"></span>
           </li>
-          <li className="relative group ">
-            <Link
-              href="#skills"
-              className="hover:text-light-green transition-colors duration-300"
-            >
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-light-green transition-all duration-300 group-hover:w-full"></span>
-              Skills
-            </Link>
-          </li>
-          <li className="relative group ">
-            <Link
-              href="#projects"
-              className="hover:text-light-green transition-colors duration-300"
-            >
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-light-green transition-all duration-300 group-hover:w-full"></span>
-              Projects
-            </Link>
-          </li>
-          <li className="relative group ">
-            <Link
-              href="#contact"
-              className="hover:text-light-green transition-colors duration-300"
-            >
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-light-green transition-all duration-300 group-hover:w-full"></span>
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </>
+        ))}
+      </ul>
+
+      {/* Mobile Hamburger Button */}
+      <button
+        className="md:hidden flex flex-col gap-1.5 p-2"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span
+          className={`block w-6 h-0.5 bg-text transition-all duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""}`}
+        ></span>
+        <span
+          className={`block w-6 h-0.5 bg-text transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}
+        ></span>
+        <span
+          className={`block w-6 h-0.5 bg-text transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}
+        ></span>
+      </button>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden absolute top-24 left-0 w-full bg-bg-main border-t border-light-green/20 z-50">
+          <ul className="flex flex-col font-archivo text-text px-6 py-4 gap-6">
+            {["about", "skills", "projects", "contact"].map((item) => (
+              <li key={item}>
+                <Link
+                  href={`#${item}`}
+                  className="hover:text-light-green transition-colors duration-300 capitalize text-lg"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </nav>
   );
 }
 

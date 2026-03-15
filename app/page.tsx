@@ -17,9 +17,11 @@ import TechnicalSkill from "./components/technicalSkills";
 export default function Home() {
   return (
     <div className="cursor-default scroll-smooth">
-      <section className="Hero mb-4">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-bg-main bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+      <header className="sticky top-0 z-50 bg-bg-main">
         <Navbar />
+      </header>
+      <section className="Hero mb-4 relative">
+        <div className="absolute inset-0 -z-10 h-full w-full bg-bg-main bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
         <Available />
         <HeroInfo />
       </section>

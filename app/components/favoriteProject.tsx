@@ -52,7 +52,7 @@ function featuredBadge() {
             processing, and analytics dashboard.
           </p>
         </div>
-        <div className="teckStack flex gap-2 mb-6">
+        <div className="teckStack flex flex-wrap gap-2 mb-6">
           <div className="bg-faded p-2 rounded-xl">Next.js</div>
           <div className="bg-faded p-2 rounded-xl">TypeScript</div>
           <div className="bg-faded p-2 rounded-xl">Strip</div>
