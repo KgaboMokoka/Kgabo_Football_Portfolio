@@ -27,11 +27,11 @@ function Trophy() {
           </div>
           <div className="bg-dark-green rounded-2xl">
             <OtherProjects
-              title="Project Title"
-              description="Project description goes here"
-              techStack={["React", "TypeScript", "Tailwind"]}
-              live="https://example.com"
-              github="https://github.com/username/repo"
+              title="Somnium Records"
+              description="A quick landing page / Promo page for a record label to be able to send out marketing information to listeners and any other news the label wants to send out"
+              techStack={["HTML", "Tailwind", "Vercel", "Brevo"]}
+              live="https://somnium-two.vercel.app/"
+              github="https://github.com/KgaboMokoka/Somnium_Records_landing_page"
             />
           </div>
         </div>
@@ -40,16 +40,16 @@ function Trophy() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="bg-dark-green rounded-2xl">
             <OtherProjects
-              title="Somnium Records"
-              description="A quick landing page / Promo page for a record label to be able to send out marketing information to listeners and any other news the label wants to send out"
-              techStack={["HTML", "Tailwind", "Vercel", "Brevo"]}
-              live="https://somnium-two.vercel.app/"
-              github="https://github.com/KgaboMokoka/Somnium_Records_landing_page"
+              title="Mokoka Web Studio"
+              description="My personal Website building agency"
+              techStack={["Next.js", "JavaScript", "Tailwind"]}
+              live="https://www.mokokawebstudio.com/"
+              github="https://github.com/KgaboMokoka/mokoka-web-studio"
             />
           </div>
-          <div className="bg-dark-green rounded-2xl">
+          {/* <div className="bg-dark-green rounded-2xl">
             <OtherProjects
-              title="Another Project"
+              title="Project 2"
               description="Description of another project"
               techStack={["Next.js", "CSS"]}
               live="https://example.com"
@@ -58,13 +58,13 @@ function Trophy() {
           </div>
           <div className="bg-dark-green rounded-2xl">
             <OtherProjects
-              title="Third Project"
+              title="Project 3"
               description="Description of third project"
               techStack={["JavaScript", "Node.js"]}
               live="https://example.com"
               github="https://github.com/username/repo"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
